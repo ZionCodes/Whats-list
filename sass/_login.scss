@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+$main-text: #f1f1f1;
+$sec-text: #2c3e50;
+$aqua: #00ffff;
+$aqua-flip: rgb(74, 163, 163);
+$back-gen: #eff3f6;
+$com-back: #ffffff;
+
+.login {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 560px;
+    margin: 0 auto;
+    height: 80vh;
+
+    h2 {
+        justify-self: flex-end;
+        align-self: flex-start;
+        color: $sec-text;
+
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 560px;
+
+        input {
+            height: 2.5em;
+            line-height: 1.5;
+            max-width: 560px;
+            width: 100%;
+            margin: .5rem;
+            padding: .5rem;
+
+
+
+        }
+    }
+
+     a {
+         align-self: flex-start;
+         font-size: 0.8rem;
+         color: $aqua;
+
+         &:hover {
+            color: $aqua-flip;
+        }
+     }
+
+     button {
+         margin: .5rem;
+         padding: .5rem .75rem;
+         background-color: $aqua;
+         border: none;
+         border-radius: 5px;
+         color: $main-text;
+         font-size: 1.2rem;
+         font-weight: 400;
+
+         &:hover {
+             background-color: $aqua-flip;
+         }
+     }
+
+    
+
+}

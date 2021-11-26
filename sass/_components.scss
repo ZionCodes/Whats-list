@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$main-text: #f1f1f1;
+$sec-text: #2c3e50;
+$aqua: #00ffff;
+$aqua-flip: rgb(74, 163, 163);
+$back-gen: #eff3f6;
+$com-back: #ffffff;
+
+
+.components-list {
+    margin-top: 1rem;
+    margin: 5px;
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    .component {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 5px red;
+        border-radius: 5px;
+        padding: 1rem;
+        border: 1px solid $sec-text;
+        background-color: $aqua;
+
+        .promoted {
+            align-self: flex-end;
+            justify-self: right;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+
+            p {
+                font-size: .75rem;
+                color: $aqua-flip;
+            }
+
+
+            
+        }
+
+        .com-top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 40px;
+                margin-right: .5rem;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .top-info {
+                a {
+                    text-decoration: none;
+                    color: $sec-text;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .title {
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                }
+                .rating {
+                    font-size: .8rem;
+                    font-weight: 400;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    
+                }
+            }
+
+        }
+
+        
+
+        
+
+
+    }
+
+    .promote {
+        background-color: royalblue;
+    }
+
+    
+}
